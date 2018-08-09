@@ -2,16 +2,8 @@
 Insta_Tweet
 ===========
 
-
-.. image:: https://img.shields.io/pypi/v/insta_tweet.svg
-        :target: https://pypi.python.org/pypi/insta_tweet
-
 .. image:: https://img.shields.io/travis/Sayak9495/Instagram-Tweet.svg
         :target: https://travis-ci.org/Sayak9495/Instagram-Tweet
-
-.. image:: https://readthedocs.org/projects/insta-tweet/badge/?version=latest
-        :target: https://insta-tweet.readthedocs.io/en/latest/?badge=latest
-        :alt: Documentation Status
 
 
 
@@ -20,13 +12,20 @@ Scrapes specified Instagram accounts and tweets the pictures on Twitter.
 
 
 * Free software: GNU General Public License v3
-* Documentation: https://insta-tweet.readthedocs.io.
+
+How to Use
+--------
+1. Clone the repo and install the dependencies listed in requirments.
+2. Execute the insta_tweet.py.
+3. Instagram Pages can be updated manually. Change or append "instagram_pages_names" that should be exact page name in instagram, then add that file name with .txt in "page_names" diretory. And add the picture code from instagram to that .txt file. [Refer already present text files]
+
 
 
 Features
 --------
 
-* TODO
+* Scrapes Instagram pages for new updates
+* Tweet those updates.
 
 Credits
 -------
