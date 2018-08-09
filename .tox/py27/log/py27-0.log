@@ -1,8 +1,0 @@
-actionid: py27
-msg: getenv
-cmdargs: ['/usr/bin/python', '-m', 'virtualenv', '--python', '/usr/bin/python2.7', 'py27']
-
-New python executable in /home/tech0/WorkSpace_Elementry/Git_repos/own_repo/Instagram-Tweet/.tox/py27/bin/python2.7
-Also creating executable in /home/tech0/WorkSpace_Elementry/Git_repos/own_repo/Instagram-Tweet/.tox/py27/bin/python
-Installing setuptools, pip, wheel...done.
-Running virtualenv with interpreter /usr/bin/python2.7

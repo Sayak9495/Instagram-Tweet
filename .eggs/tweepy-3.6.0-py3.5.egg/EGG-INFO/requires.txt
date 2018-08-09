@@ -1,4 +1,0 @@
-PySocks>=1.5.7
-requests-oauthlib>=0.7.0
-requests>=2.11.1
-six>=1.10.0
