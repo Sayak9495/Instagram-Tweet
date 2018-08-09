@@ -13,7 +13,11 @@ from insta_tweet import cli
 class TestInsta_tweet(unittest.TestCase):
     """Tests for `insta_tweet` package."""
 
-    def testapi_info(self):
+    #def testapi_info(self):
+    #    response=insta_tweet.insta_tweet('godemperormusk')
+    #    self.assertEqual(response,"DONE")
+
+    def test_insta_tweet(self):
         response=insta_tweet.insta_tweet('godemperormusk')
         self.assertEqual(response,"DONE")
 
