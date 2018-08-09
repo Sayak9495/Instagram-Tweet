@@ -18,10 +18,10 @@ from bs4 import BeautifulSoup
 import re
 
 def twitter_api():
-	consumer_key = 'cklOCaJk5KI9pWTr45JqsSRV3'
-	consumer_secret = 'p0pgEnkVRDkaPS9wZup75bNdnRdlOOfBMwIXf72dNSNrf8Jkz6'
-	access_token = '1021066006792265729-iFXZqhEqa2z80SrIh7gSDRWcOS6u6z'
-	access_token_secret = 'Lsf0wTKp35JKwPvnrctz1GJTRDr8knuArBcxhSUOodYZs'
+	consumer_key = ''
+	consumer_secret = ''
+	access_token = ''
+	access_token_secret = ''
 
 	auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 	auth.set_access_token(access_token, access_token_secret)
