@@ -6,8 +6,8 @@ Insta_Tweet
 .. image:: https://img.shields.io/pypi/v/insta_tweet.svg
         :target: https://pypi.python.org/pypi/insta_tweet
 
-.. image:: https://img.shields.io/travis/sayak9495/insta_tweet.svg
-        :target: https://travis-ci.org/sayak9495/insta_tweet
+.. image:: https://img.shields.io/travis/sayak9495/Instagram-Tweet.svg
+        :target: https://travis-ci.org/sayak9495/Instagram-Tweet
 
 .. image:: https://readthedocs.org/projects/insta-tweet/badge/?version=latest
         :target: https://insta-tweet.readthedocs.io/en/latest/?badge=latest
