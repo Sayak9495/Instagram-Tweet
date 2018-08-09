@@ -5,7 +5,15 @@ import os
 import tweepy
 import oauth2 as oauth
 import requests
-import urllib2
+#import urllib2
+#from urllib.request import urlopen
+try:
+    # For Python 3.0 and later
+    from urllib.request import urlopen
+except ImportError:
+    # For Python 2.0 and later
+    from urllib2 import urlopen
+
 from bs4 import BeautifulSoup
 import re
 
@@ -35,9 +43,15 @@ def tweet_image(url, message):
         print("Unable to download image")
 
 
+
+def insta_tweet1(page_name):
+	#this method can be removed since this is just a unittest driver
+	return page_name
+
+
 def insta_tweet(page_name):
 	page = "https://www.instagram.com/"+page_name+"/"
-	page = urllib2.urlopen(page)
+	page = urlopen(page)
 	soup = BeautifulSoup(page, "html.parser")
 	script = soup.findAll('script')[3].string
 	ind=script.find('= {')
@@ -52,6 +66,7 @@ def insta_tweet(page_name):
 
 	jpgs = [m.start() for m in re.finditer('.jpg",', script)]
 	flag,cap_indx=0,0
+	url=None
 	for indx in indxs:
 		for i,jpg in enumerate(jpgs):
 			if jpg>indx:
@@ -79,10 +94,12 @@ def insta_tweet(page_name):
 			msg=caption + " Credit - https://www.instagram.com/"+page_name
 			#print(url)
 			#tweet_image(url,msg)
-	return "DONE"
 	f.close()
+	return "DONE"
 
+def driver(page_name):
+	for names in page_name:
+		print(insta_tweet(names))
 
-page_name=["programmer.me","godemperormusk","alpha_leaders","webprogramlife"]
-for names in page_name:
-	insta_tweet(names)
+instagram_page_names=["programmer.me","godemperormusk","alpha_leaders","webprogramlife"]
+#driver(instagram_page_names)

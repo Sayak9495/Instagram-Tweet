@@ -5,21 +5,14 @@
 
 
 import unittest
-from click.testing import CliRunner
-
+import tweepy
 from insta_tweet import insta_tweet
-from insta_tweet import cli
 
-class test_insta_tweet(unittest.TestCase):
-    """Tests for `insta_tweet` package."""
+class Testinsta_tweet(unittest.TestCase):
 
-    def testapi_info(self):
-        response=insta_tweet.insta_tweet('godemperormusk')
-        self.assertEqual(response,"DONE")
-
-    #def test_insta_tweet(self):
-    #    response=insta_tweet.insta_tweet('godemperormusk')
-    #    self.assertEqual(response,"DONE")
+    def testinsta_tweet(self):
+        response=insta_tweet.insta_tweet1('godemperormusk')
+        self.assertEqual(response,"godemperormusk")
 
 if __name__ == '__main__':
     unittest.main()

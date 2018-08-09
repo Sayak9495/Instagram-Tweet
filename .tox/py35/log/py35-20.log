@@ -1,0 +1,6 @@
+actionid: py35
+msg: envreport
+cmdargs: ['/home/tech0/WorkSpace_Elementry/Git_repos/own_repo/Instagram-Tweet/.tox/py35/bin/pip', 'freeze']
+
+click==6.7
+insta-tweet==1.0

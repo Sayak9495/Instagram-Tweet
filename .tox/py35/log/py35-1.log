@@ -1,0 +1,17 @@
+actionid: py35
+msg: installpkg
+cmdargs: ['/home/tech0/WorkSpace_Elementry/Git_repos/own_repo/Instagram-Tweet/.tox/py35/bin/pip', 'install', '/home/tech0/WorkSpace_Elementry/Git_repos/own_repo/Instagram-Tweet/.tox/dist/insta_tweet-2.7.zip']
+
+Processing ./.tox/dist/insta_tweet-2.7.zip
+Collecting Click>=6.0 (from insta-tweet==2.7)
+  Using cached https://files.pythonhosted.org/packages/34/c1/8806f99713ddb993c5366c362b2f908f18269f8d792aff1abfd700775a77/click-6.7-py2.py3-none-any.whl
+Building wheels for collected packages: insta-tweet
+  Running setup.py bdist_wheel for insta-tweet: started
+  Running setup.py bdist_wheel for insta-tweet: finished with status 'done'
+  Stored in directory: /home/tech0/.cache/pip/wheels/45/d6/d0/378227eadbba61f92dd686c562af65233766beb3b86e4fdee6
+Successfully built insta-tweet
+Installing collected packages: Click, insta-tweet
+  Found existing installation: insta-tweet 2.7
+    Not uninstalling insta-tweet at /home/tech0/WorkSpace_Elementry/Git_repos/own_repo/Instagram-Tweet, outside environment /home/tech0/WorkSpace_Elementry/Git_repos/own_repo/Instagram-Tweet/.tox/py35
+    Can't uninstall 'insta-tweet'. No files were found to uninstall.
+Successfully installed Click-6.7 insta-tweet-2.7

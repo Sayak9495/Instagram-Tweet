@@ -1,0 +1,7 @@
+actionid: flake8
+msg: getenv
+cmdargs: ['/usr/bin/python', '-m', 'virtualenv', '--python', '/usr/bin/python', 'flake8']
+
+Already using interpreter /usr/bin/python
+New python executable in /home/tech0/WorkSpace_Elementry/Git_repos/own_repo/Instagram-Tweet/.tox/flake8/bin/python
+Installing setuptools, pip, wheel...done.

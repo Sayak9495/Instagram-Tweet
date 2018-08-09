@@ -11,7 +11,7 @@ with open('README.rst') as readme_file:
 with open('HISTORY.rst') as history_file:
     history = history_file.read()
 
-requirements = ['Click>=6.0', ]
+requirements = ['tweepy','requests','oauth2','beautifulsoup4']
 
 setup_requirements = [ ]
 
@@ -35,9 +35,7 @@ setup(
     ],
     description="Scrapes specified Instagram accounts and tweets the pictures on Twitter.",
     entry_points={
-        'console_scripts': [
-            'insta_tweet=insta_tweet.cli:main',
-        ],
+        'console_scripts': [],
     },
     install_requires=requirements,
     license="GNU General Public License v3",
@@ -50,6 +48,6 @@ setup(
     test_suite='tests',
     tests_require=test_requirements,
     url='https://github.com/sayak9495/insta_tweet',
-    version='2.7',
+    version='1.0',
     zip_safe=False,
 )
