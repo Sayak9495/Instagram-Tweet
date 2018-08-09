@@ -1,4 +1,0 @@
-tweepy
-requests
-oauth2
-beautifulsoup4
