@@ -5,8 +5,6 @@ import os
 import tweepy
 import oauth2 as oauth
 import requests
-#import urllib2
-#from urllib.request import urlopen
 try:
     # For Python 3.0 and later
     from urllib.request import urlopen
@@ -47,6 +45,14 @@ def tweet_image(url, message):
 def insta_tweet1(page_name):
 	#this method can be removed since this is just a unittest driver
 	return page_name
+
+
+def clean(msg):
+        lst=msg.split()
+        for i in (lst):
+                if ("\u" in i or "\n" in i):
+                        lst.remove(i)
+        return " ".join(lst)
 
 
 def insta_tweet(page_name):
@@ -93,7 +99,7 @@ def insta_tweet(page_name):
 				
 			msg=caption + " Credit - https://www.instagram.com/"+page_name
 			#print(url)
-			#tweet_image(url,msg)
+			#tweet_image(url,clean(msg))
 	f.close()
 	return "DONE"
 
