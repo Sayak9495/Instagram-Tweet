@@ -6,11 +6,11 @@ import tweepy
 import oauth2 as oauth
 import requests
 try:
-    # For Python 3.0 and later
-    from urllib.request import urlopen
+	# For Python 3.0 and later
+	from urllib.request import urlopen
 except ImportError:
-    # For Python 2.0 and later
-    from urllib2 import urlopen
+	# For Python 2.0 and later
+	from urllib2 import urlopen
 
 from bs4 import BeautifulSoup
 import re
@@ -27,18 +27,18 @@ def twitter_api():
 	return api
 
 def tweet_image(url, message):
-    api = twitter_api()
-    filename = 'temp.jpg'
-    request = requests.get(url, stream=True)
-    if request.status_code == 200:
-        with open(filename, 'wb') as image:
-            for chunk in request:
-                image.write(chunk)
+	api = twitter_api()
+	filename = 'temp.jpg'
+	request = requests.get(url, stream=True)
+	if request.status_code == 200:
+		with open(filename, 'wb') as image:
+			for chunk in request:
+				image.write(chunk)
 
-        api.update_with_media(filename, status=message)
-        os.remove(filename)
-    else:
-        print("Unable to download image")
+		api.update_with_media(filename, status=message)
+		os.remove(filename)
+	else:
+		print("Unable to download image")
 
 
 
@@ -48,11 +48,11 @@ def insta_tweet1(page_name):
 
 
 def clean(msg):
-        lst=msg.split()
-        for i in (lst):
-                if ("\u" in i or "\n" in i):
-                        lst.remove(i)
-        return " ".join(lst)
+		lst=msg.split()
+		for i in (lst):
+				if ("\u" in i or "\n" in i):
+						lst.remove(i)
+		return " ".join(lst)
 
 
 def insta_tweet(page_name):

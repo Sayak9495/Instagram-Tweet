@@ -5,7 +5,6 @@
 
 
 import unittest
-import tweepy
 from insta_tweet import insta_tweet
 
 class Testinsta_tweet(unittest.TestCase):
