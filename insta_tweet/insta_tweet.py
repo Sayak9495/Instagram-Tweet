@@ -50,7 +50,7 @@ def insta_tweet1(page_name):
 def clean(msg):
 		lst=msg.split()
 		for i in (lst):
-				if ("\u" in i or "\n" in i):
+				if ('\\u' in i or "\n" in i):
 						lst.remove(i)
 		return " ".join(lst)
 
