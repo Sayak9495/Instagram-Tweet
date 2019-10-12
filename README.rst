@@ -1,15 +1,12 @@
+
+Travis
+[![Status](https://img.shields.io/travis/Sayak9495/Instagram-Tweet.svg)](https://travis-ci.org/Sayak9495/Instagram-Tweet)  
+
+[![DeepSource](https://static.deepsource.io/deepsource-badge-dark.svg)](https://deepsource.io/gh/Sayak9495/Instagram-Tweet/?ref=repository-badge)
+
 ===========
 Insta_Tweet
 ===========
-
-.. image:: https://img.shields.io/travis/Sayak9495/Instagram-Tweet.svg
-        :target: https://travis-ci.org/Sayak9495/Instagram-Tweet
-
-.. image:: https://static.deepsource.io/deepsource-badge-light.svg
-        :target: https://deepsource.io/gh/Sayak9495/Instagram-Tweet/?ref=repository-badge
-
-
-
 
 Scrapes specified Instagram accounts and tweets the pictures on Twitter.
 
