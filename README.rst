@@ -5,7 +5,9 @@ Insta_Tweet
 .. image:: https://img.shields.io/travis/Sayak9495/Instagram-Tweet.svg
         :target: https://travis-ci.org/Sayak9495/Instagram-Tweet
 
-[![DeepSource](https://static.deepsource.io/deepsource-badge-light.svg)](https://deepsource.io/gh/Sayak9495/Instagram-Tweet/?ref=repository-badge)
+.. image:: https://static.deepsource.io/deepsource-badge-light.svg
+        :target: https://deepsource.io/gh/Sayak9495/Instagram-Tweet/?ref=repository-badge
+
 
 
 
